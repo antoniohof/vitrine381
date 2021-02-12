@@ -35,5 +35,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@import '@/assets/variables.sass'
 
 </style>
