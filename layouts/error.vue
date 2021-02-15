@@ -38,7 +38,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '@/assets/variables.sass'
 
 h1
   font-size: 20px

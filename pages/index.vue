@@ -38,8 +38,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '@/assets/variables.sass'
-
 .main
   width: 100%
   height: fit-content

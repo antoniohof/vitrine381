@@ -17,6 +17,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    "~/assets/globals.sass",
   ],
   target: 'static',
 
@@ -42,7 +43,7 @@ export default {
   },
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
-    customVariables: ['~/assets/variables.sass'],
+    customVariables: ['~/assets/globals.sass'],
     theme: {
       dark: false,
       themes: {
