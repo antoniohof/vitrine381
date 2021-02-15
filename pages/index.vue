@@ -1,6 +1,9 @@
 <template>
-  <div>
-    VITRINE
+  <div class='main'>
+    <div class='main_top'>
+      <div class='main_top_logo'> VITRINE </div>
+
+    </div>
   </div>
 </template>
 
@@ -36,5 +39,20 @@ export default {
 
 <style lang="sass" scoped>
 @import '@/assets/variables.sass'
+
+.main
+  width: 100%
+  height: fit-content
+  display: flex
+  &_top
+    display: flex
+    width: 100%
+    height: 50px
+    position: absolute
+    flex-direction: row
+    top: 0
+    &_logo
+      font-size: 30px
+
 
 </style>
