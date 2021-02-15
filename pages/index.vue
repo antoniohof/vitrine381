@@ -50,7 +50,7 @@ export default {
     flex-direction: row
     top: 0
     &_logo
-      font-size: 30px
+      font-size: 45px
       font-family: Ribosoma Slanted
 
 
