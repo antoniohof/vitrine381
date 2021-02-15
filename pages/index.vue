@@ -51,6 +51,7 @@ export default {
     top: 0
     &_logo
       font-size: 30px
+      font-family: Ribosoma Slanted
 
 
 </style>
