@@ -90,6 +90,7 @@ export default {
   render: {
     bundleRenderer: {
       shouldPreload: (file, type) => {
+        console.log(file)
         return ['script', 'style', 'font'].includes(type)
       }
     }
