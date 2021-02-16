@@ -15,28 +15,7 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'
       },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'preload',
-        as: 'font',
-        crossorigin: 'crossorigin',
-        type: 'font/otf',
-        href: 'fonts/Ribosoma/Ribosoma-Antislanted.otf'
-      },
-      {
-        rel: 'preload',
-        as: 'font',
-        crossorigin: 'crossorigin',
-        type: 'font/otf',
-        href: 'fonts/Ribosoma/Ribosoma-Roman.otf'
-      },
-      {
-        rel: 'preload',
-        as: 'font',
-        crossorigin: 'crossorigin',
-        type: 'font/otf',
-        href: 'fonts/Ribosoma/Ribosoma-Slanted.otf'
-      }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
@@ -90,13 +69,11 @@ export default {
   render: {
     bundleRenderer: {
       shouldPreload: (file, type) => {
-        console.log(file)
-        return ['script', 'style', 'font'].includes(type)
+        return ['font'].includes(type)
       }
     }
   },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    extractCSS: true
   }
 }
