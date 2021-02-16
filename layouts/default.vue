@@ -1,6 +1,10 @@
 <template>
   <v-app>
     <v-main class='body'>
+      <div class='logo'>
+        <div class='logo_first'>Vitrine</div>
+        <div class='logo_second'>381</div>
+      </div>
       <v-container fluid>
         <nuxt />
       </v-container>
@@ -22,10 +26,27 @@ export default {
 
 <style lang="sass" scoped>
 .body
-  width: calc(100vw - 50px)
-  height: calc(100vh - 50px)
+  min-width: 50vw
+  max-height: calc(100vh - 100px)
+  margin-left: 100px
+  margin-right: 100px
+  margin-top: 20px
+  border: 1px solid rgba(0,0,0,0.5)
+  min-height: 250px
+.logo
+  padding: 0px
+  font-size: 22px
+  width: fit-content
   display: flex
-  margin: 20px
-  border-top: 1px solid black
-  border-left: 1px solid black
+  flex-direction: column
+  margin-left: 35px
+  margin-top: 30px
+  &_first
+    font-family: Ribosoma AntiSlanted
+  &_second
+    margin-top: -10px
+    font-family: Ribosoma Slanted
+
+.container
+  height: 100%
 </style>

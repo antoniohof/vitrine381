@@ -40,5 +40,5 @@ export default {
 
 <style lang="sass" scoped>
 .exhibitions
-
+  height: auto
 </style>

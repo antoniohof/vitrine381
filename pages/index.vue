@@ -1,11 +1,11 @@
 <template>
   <div class='main'>
-    <div class='main_top'>
-      <div class='main_top_logo'> VITRINE 381 </div>
-      <div class='main_top_menu'>
-        <NuxtLink class='main_top_menu_item' to="/exhibitions">exhibitions</NuxtLink>
-        <div class='main_top_menu_separator'>/</div>
-        <div class='main_top_menu_item'>space</div>
+    <div class='main_menu'>
+      <div class='main_menu_items'>
+        <NuxtLink class='main_menu_item' to="/space">space</NuxtLink>
+        <NuxtLink class='main_menu_item' to="/calls">calls</NuxtLink>
+        <NuxtLink class='main_menu_item' to="/exhibitions">exhibitions</NuxtLink>
+        <NuxtLink class='main_menu_item' to="/contact">contact</NuxtLink>
       </div>
     </div>
   </div>
@@ -43,33 +43,28 @@ export default {
 
 <style lang="sass" scoped>
 .main
-  &_top
-    display: flex
-    width: 100%
-    height: 50px
-    position: absolute
-    flex-direction: row
-    top: 10px
-    &_logo
-      padding: 15px
-      font-size: 22px
-      width: 200px
-      height: 100px
-      font-family: Ribosoma Slanted
-    &_menu
-      width: 100%
-      margin-right: 10%
-      justify-content: flex-end
+  display: flex
+  justify-content: flex-end
+  margin-top: -99px
+  height: calc(100% + 25px)
+  &_menu
+    border-left: 1px solid rgba(0,0,0,0.5)
+    width: 200px
+    height: 100%
+    justify-content: center
+    &_items
       display: flex
-      align-self: center
-      flex-direction: row
-      &_separator
-        margin-left: 10px
-        pointer-events: none
-      &_item
-        text-decoration: none !important
-        color: black
-        margin-left: 10px
-        cursor: pointer
+      flex-direction: column
+      width: fit-content
+      margin: 0 auto
+      margin-top: 20px
+    &_item
+      text-decoration: none
+      color: black
+      margin-left: 20px
+      cursor: pointer
+      font-family: 'PT Sans', sans-serif
+      &:hover
+        text-decoration: underline !important
 
 </style>
