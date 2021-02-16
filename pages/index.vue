@@ -49,7 +49,8 @@ export default {
   height: calc(100% + 25px)
   &_menu
     border-left: 1px solid rgba(0,0,0,0.5)
-    width: 200px
+    width: 20%
+    min-width: 100px
     height: 100%
     justify-content: center
     &_items
@@ -60,7 +61,7 @@ export default {
       margin-top: 20px
     &_item
       text-decoration: none
-      color: black
+      color: rgba(60,60,60,0.9)
       margin-left: 20px
       cursor: pointer
       font-family: 'PT Sans', sans-serif

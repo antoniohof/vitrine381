@@ -28,10 +28,10 @@ export default {
 .body
   min-width: 50vw
   max-height: calc(100vh - 100px)
-  margin-left: 100px
-  margin-right: 100px
+  margin-left: 5%
+  margin-right: 5%
   margin-top: 20px
-  border: 1px solid rgba(0,0,0,0.5)
+  border: 1px solid rgba(80,80,80,0.5)
   min-height: 250px
 .logo
   padding: 0px
@@ -41,6 +41,7 @@ export default {
   flex-direction: column
   margin-left: 35px
   margin-top: 30px
+  color: rgba(120,120,120,0.9)
   &_first
     font-family: Ribosoma AntiSlanted
   &_second
