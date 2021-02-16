@@ -3,7 +3,7 @@
     <div class='main_top'>
       <div class='main_top_logo'> VITRINE 381 </div>
       <div class='main_top_menu'>
-        <div class='main_top_menu_item'>exhibitions</div>
+        <NuxtLink class='main_top_menu_item' to="/exhibitions">exhibitions</NuxtLink>
         <div class='main_top_menu_separator'>/</div>
         <div class='main_top_menu_item'>space</div>
       </div>
@@ -43,12 +43,6 @@ export default {
 
 <style lang="sass" scoped>
 .main
-  width: calc(100vw - 50px)
-  height: calc(100vh - 50px)
-  display: flex
-  margin: 5px
-  border-top: 1px solid black
-  border-left: 1px solid black
   &_top
     display: flex
     width: 100%
@@ -73,6 +67,8 @@ export default {
         margin-left: 10px
         pointer-events: none
       &_item
+        text-decoration: none !important
+        color: black
         margin-left: 10px
         cursor: pointer
 

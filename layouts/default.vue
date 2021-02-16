@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main class='body'>
       <v-container fluid>
         <nuxt />
       </v-container>
@@ -21,5 +21,11 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
+.body
+  width: calc(100vw - 50px)
+  height: calc(100vh - 50px)
+  display: flex
+  margin: 20px
+  border-top: 1px solid black
+  border-left: 1px solid black
 </style>
