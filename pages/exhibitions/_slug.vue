@@ -1,5 +1,7 @@
 <template>
   <div class='exhibition'>
+    <h1>{{ exhibition.title }}</h1>
+    <nuxt-content :document="exhibition" />
   </div>
 </template>
 
@@ -13,14 +15,17 @@ export default {
   },
   components: {
   },
-  async asyncData({ $content }) {
-
-    const exhibitions = await $content("exhibitions").fetch()
-
-    return {
-      exhibitions
+  async asyncData({ $content, params, error }) {
+    let exhibition;
+    try {
+      exhibition = await $content("exhibitions", params.slug).fetch();
+      // OR const article = await $content(`articles/${params.slug}`).fetch()
+    } catch (e) {
+      error({ message: "exhibition not found" });
     }
-
+    return {
+      exhibition,
+    };
   },
   methods: {
 
@@ -29,6 +34,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.exhibitions
+.exhibition
+  width: 100%
 
 </style>
