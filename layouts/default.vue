@@ -50,7 +50,7 @@ export default {
   display: flex
   flex-direction: column
   margin-left: 35px
-  margin-top: 30px
+  margin-top: 20px
   color: rgba(120,120,120,0.9)
   &_first
     font-family: Ribosoma AntiSlanted
@@ -67,7 +67,7 @@ export default {
 
 .menu
   height: 100%
-  width: 120px
+  width: 15%
   right: 0
   position: absolute
   border-left: 1px solid rgba(80,80,80,0.5)
@@ -83,12 +83,12 @@ export default {
       text-decoration: none
       color: rgba(60,60,60,0.9)
       cursor: pointer
+      font-size: 12px
       font-family: 'PT Sans', sans-serif
       &:hover
         text-decoration: underline !important
 
 .container
   width: 100%
-  padding-left: 35px
-  padding-right: 120px
+  padding-right: max(100px, 15%)
 </style>
