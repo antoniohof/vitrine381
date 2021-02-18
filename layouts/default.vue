@@ -2,20 +2,20 @@
   <v-app>
     <v-main class='body' flex flex-row align-center w-full>
       <v-layout class='topfixed' h-full>
-        <div class='logo'>
+        <NuxtLink class='logo' to="/">
           <div class='logo_first'>Vitrine</div>
           <div class='logo_second'>381</div>
-        </div>
+        </NuxtLink>
         <div class='menu'>
           <div class='menu_items'>
-            <NuxtLink class='menu_items_item' to="/space">space</NuxtLink>
-            <NuxtLink class='menu_items_item' to="/calls">calls</NuxtLink>
-            <NuxtLink class='menu_items_item' to="/exhibitions">exhibitions</NuxtLink>
-            <NuxtLink class='menu_items_item' to="/contact">contact</NuxtLink>
+            <NuxtLink :class="{selected: $route.path === '/space'}" class='menu_items_item' to="/space">space</NuxtLink>
+            <NuxtLink :class="{selected: $route.path === '/calls'}" class='menu_items_item' to="/calls">calls</NuxtLink>
+            <NuxtLink :class="{selected: $route.path === '/exhibitions'}" class='menu_items_item' to="/exhibitions">exhibitions</NuxtLink>
+            <NuxtLink :class="{selected: $route.path === '/contact'}" class='menu_items_item' to="/contact">contact</NuxtLink>
           </div>
         </div>
       </v-layout>
-      <v-container fluid>
+      <v-container class='maincontainer' fluid>
         <nuxt />
       </v-container>
     </v-main>
@@ -37,21 +37,22 @@ export default {
 <style lang="sass" scoped>
 .body
   min-width: 50vw
-  max-height: calc(100vh - 100px)
   margin-left: 5%
   margin-right: 5%
   margin-top: 20px
-  border: 1px solid rgba(80,80,80,0.5)
+  border: 1px solid $menu-color
   min-height: 250px
 .logo
+  cursor: pointer
   padding: 0px
+  text-decoration: none
   font-size: 22px
   width: fit-content
   display: flex
   flex-direction: column
   margin-left: 35px
   margin-top: 20px
-  color: rgba(120,120,120,0.9)
+  color: $menu-color
   &_first
     font-family: Ribosoma AntiSlanted
   &_second
@@ -63,14 +64,13 @@ export default {
   justify-content: space-between
   display: flex
   flex-direction: row
-  margin-bottom: 20px
 
 .menu
   height: 100%
   width: 15%
   right: 0
   position: absolute
-  border-left: 1px solid rgba(80,80,80,0.5)
+  border-left: 1px solid $menu-color
   min-width: 100px
   justify-content: cente
   &_items
@@ -81,14 +81,19 @@ export default {
     margin-top: 20px
     &_item
       text-decoration: none
-      color: rgba(60,60,60,0.9)
+      color: $menu-color
       cursor: pointer
       font-size: 12px
       font-family: 'PT Sans', sans-serif
       &:hover
-        text-decoration: underline !important
-
-.container
+        text-decoration: underline
+      &.selected
+        font-style: italic
+        text-decoration: none !important
+        font-weight: bold
+.maincontainer
   width: 100%
+  margin-right: 0
+  margin-left: 0
   padding-right: max(100px, 15%)
 </style>

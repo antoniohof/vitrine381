@@ -12,10 +12,12 @@
     "@nuxt/content": "^1.11.1",
     "core-js": "^3.6.5",
     "fibers": "^5.0.0",
+    "moment": "^2.29.1",
     "nuxt": "^2.15.0",
     "sass-loader": "7.1.0"
   },
   "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/vuetify": "^1.11.2"
   }
 }

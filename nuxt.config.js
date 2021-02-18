@@ -40,8 +40,12 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    sass: ['~/assets/globals.sass']
+  },
   content: {
     // Options
   },
