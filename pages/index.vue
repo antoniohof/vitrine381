@@ -1,13 +1,6 @@
 <template>
   <div class='main'>
-    <div class='main_menu'>
-      <div class='main_menu_items'>
-        <NuxtLink class='main_menu_item' to="/space">space</NuxtLink>
-        <NuxtLink class='main_menu_item' to="/calls">calls</NuxtLink>
-        <NuxtLink class='main_menu_item' to="/exhibitions">exhibitions</NuxtLink>
-        <NuxtLink class='main_menu_item' to="/contact">contact</NuxtLink>
-      </div>
-    </div>
+
   </div>
 </template>
 
@@ -44,28 +37,5 @@ export default {
 <style lang="sass" scoped>
 .main
   display: flex
-  justify-content: flex-end
-  margin-top: -99px
-  height: calc(100% + 25px)
-  &_menu
-    border-left: 1px solid rgba(0,0,0,0.5)
-    width: 20%
-    min-width: 100px
-    height: 100%
-    justify-content: center
-    &_items
-      display: flex
-      flex-direction: column
-      width: fit-content
-      margin: 0 auto
-      margin-top: 20px
-    &_item
-      text-decoration: none
-      color: rgba(60,60,60,0.9)
-      margin-left: 20px
-      cursor: pointer
-      font-family: 'PT Sans', sans-serif
-      &:hover
-        text-decoration: underline !important
 
 </style>

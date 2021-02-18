@@ -1,10 +1,20 @@
 <template>
   <v-app>
-    <v-main class='body'>
-      <div class='logo'>
-        <div class='logo_first'>Vitrine</div>
-        <div class='logo_second'>381</div>
-      </div>
+    <v-main class='body' flex flex-row align-center w-full>
+      <v-layout class='topfixed' h-full>
+        <div class='logo'>
+          <div class='logo_first'>Vitrine</div>
+          <div class='logo_second'>381</div>
+        </div>
+        <div class='menu'>
+          <div class='menu_items'>
+            <NuxtLink class='menu_items_item' to="/space">space</NuxtLink>
+            <NuxtLink class='menu_items_item' to="/calls">calls</NuxtLink>
+            <NuxtLink class='menu_items_item' to="/exhibitions">exhibitions</NuxtLink>
+            <NuxtLink class='menu_items_item' to="/contact">contact</NuxtLink>
+          </div>
+        </div>
+      </v-layout>
       <v-container fluid>
         <nuxt />
       </v-container>
@@ -48,6 +58,36 @@ export default {
     margin-top: -10px
     font-family: Ribosoma Slanted
 
-.container
+
+.topfixed
+  justify-content: space-between
+  display: flex
+  flex-direction: row
+  margin-bottom: 20px
+
+.menu
   height: 100%
+  width: 120px
+  right: 0
+  position: absolute
+  border-left: 1px solid rgba(80,80,80,0.5)
+  min-width: 100px
+  justify-content: cente
+  &_items
+    display: flex
+    flex-direction: column
+    width: fit-content
+    margin: 0 auto
+    margin-top: 20px
+    &_item
+      text-decoration: none
+      color: rgba(60,60,60,0.9)
+      cursor: pointer
+      font-family: 'PT Sans', sans-serif
+      &:hover
+        text-decoration: underline !important
+
+.container
+  width: calc(100% - 120px)
+  margin: 0
 </style>
