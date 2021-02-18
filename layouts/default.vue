@@ -64,6 +64,7 @@ export default {
   justify-content: space-between
   display: flex
   flex-direction: row
+  margin-bottom: 15px
 
 .menu
   height: 100%

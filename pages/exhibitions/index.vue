@@ -47,12 +47,14 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.exhibitions
+  max-width: max(500px, 70%)
 *
   font-family: "PT Sans", sans-serif
   text-decoration: none !important
   color: $font-color
 .exhibitions_body
-  margin-top: 20px
+  margin-bottom: 100px
   display: flex
   flex-direction: row
   justify-content: space-around
