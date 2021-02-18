@@ -88,6 +88,7 @@ export default {
         text-decoration: underline !important
 
 .container
-  width: calc(100% - 120px)
-  margin: 0
+  width: 100%
+  padding-left: 35px
+  padding-right: 120px
 </style>
