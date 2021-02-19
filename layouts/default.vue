@@ -44,7 +44,7 @@ export default {
   margin-top: 20px
   border: 1px solid $menu-color
   min-height: 250px
-  margin-bottom: -20px
+  margin-bottom: 20px
 
 .logo
   cursor: pointer
@@ -71,7 +71,7 @@ export default {
   margin-bottom: 15px
 
 .menu
-  height: calc(100% + -20px)
+  height: 100%
   width: 15%
   right: 0
   position: absolute

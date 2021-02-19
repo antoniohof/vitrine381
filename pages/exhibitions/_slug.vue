@@ -1,9 +1,9 @@
 <template>
-  <div class='exhibition'>
+  <v-container class='exhibition'>
     <h1 class='exhibition_title'>{{ exhibition.title }}</h1>
     <p class='exhibition_date'>{{ getFormattedDate(exhibition.date) }}</p>
     <nuxt-content class='exhibition_content' :document="exhibition" />
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -49,8 +49,18 @@ export default {
     font-size: 25px
     margin-bottom: 30px
   &_date
-    font-size: 15px
-  &_content
+    font-size: 14px
+</style>
+
+<style lang="sass">
+.exhibition_content
+  width: 80%
+  margin: 0 auto
+  img
+    width: 100% !important
+    max-width: 100%
+  p
+    font-size: 14px
 
 
 </style>
