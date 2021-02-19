@@ -1,21 +1,19 @@
 <template>
   <v-container class='exhibitions'>
-    <v-col>
-      <div v-for="exhibition of exhibitions" :key="exhibition.slug">
-        <NuxtLink :to="{ name: 'exhibitions-slug', params: { slug: exhibition.slug } }">
-          <div class='exhibitions_body'>
-            <div v-if="exhibition.thumbnail" class='exhibitions_body_thumbnail'>
-              <img :src='exhibition.thumbnail'/>
-            </div>
-            <div class='exhibitions_body_content'>
-              <div class='exhibitions_body_content_date'>{{ getFormattedDate(exhibition.date) }}</div>
-              <div class='exhibitions_body_content_title'>{{ exhibition.title }}</div>
-              <div class='exhibitions_body_content_description'>{{ exhibition.description }}</div>
-            </div>
+    <div v-for="exhibition of exhibitions" :key="exhibition.slug">
+      <NuxtLink :to="{ name: 'exhibitions-slug', params: { slug: exhibition.slug } }">
+        <div class='exhibitions_body'>
+          <div v-if="exhibition.thumbnail" class='exhibitions_body_thumbnail'>
+            <img :src='exhibition.thumbnail'/>
           </div>
-        </NuxtLink>
-      </div>
-    </v-col>
+          <div class='exhibitions_body_content'>
+            <div class='exhibitions_body_content_date'>{{ getFormattedDate(exhibition.date) }}</div>
+            <div class='exhibitions_body_content_title'>{{ exhibition.title }}</div>
+            <div class='exhibitions_body_content_description'>{{ exhibition.description }}</div>
+          </div>
+        </div>
+      </NuxtLink>
+    </div>
   </v-container>
 </template>
 
@@ -47,8 +45,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.exhibitions
-  max-width: max(600px, 70%)
 *
   font-family: "PT Sans", sans-serif
   text-decoration: none !important

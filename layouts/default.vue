@@ -16,7 +16,9 @@
         </div>
       </v-layout>
       <v-container class='maincontainer' fluid>
-        <nuxt />
+        <v-row align="center" class='maincontainer_wrapper'>
+          <nuxt />
+        </v-row>
       </v-container>
     </v-main>
   </v-app>
@@ -42,6 +44,8 @@ export default {
   margin-top: 20px
   border: 1px solid $menu-color
   min-height: 250px
+  margin-bottom: -20px
+
 .logo
   cursor: pointer
   padding: 0px
@@ -67,13 +71,14 @@ export default {
   margin-bottom: 15px
 
 .menu
-  height: 100%
+  height: calc(100% + -20px)
   width: 15%
   right: 0
   position: absolute
   border-left: 1px solid $menu-color
   min-width: 100px
-  justify-content: cente
+  justify-content: center
+
   &_items
     display: flex
     flex-direction: column
@@ -95,8 +100,12 @@ export default {
         font-weight: bold
 .maincontainer
   padding-left: 0
-  width: 100%
   margin-right: 0
   margin-left: 0
+  width: 100%
   padding-right: max(100px, 15%)
+  &_wrapper
+    max-width: max(600px, 70%)
+    margin: 0 auto
+
 </style>
