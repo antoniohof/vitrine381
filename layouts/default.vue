@@ -26,6 +26,16 @@
 
 <script>
 export default {
+  head: {
+    title: 'Home',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home about...'
+      }
+    ],
+  },
   mounted () {
     console.log('mounted vitrine app')
   },
