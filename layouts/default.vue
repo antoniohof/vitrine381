@@ -1,20 +1,20 @@
 <template>
   <v-app>
     <v-main class='body' flex flex-row align-center w-full>
-      <v-layout class='topfixed' h-full>
+      <v-row class='topfixed'>
         <NuxtLink class='logo' to="/">
           <div class='logo_first'>Vitrine</div>
           <div class='logo_second'>381</div>
         </NuxtLink>
         <div class='menu'>
-          <div class='menu_items'>
+          <menu class='menu_items'>
             <NuxtLink :class="{selected: $route.path === '/space'}" class='menu_items_item' to="/space">space</NuxtLink>
             <NuxtLink :class="{selected: $route.path === '/calls'}" class='menu_items_item' to="/calls">calls</NuxtLink>
             <NuxtLink :class="{selected: $route.path === '/exhibitions'}" class='menu_items_item' to="/exhibitions">exhibitions</NuxtLink>
             <NuxtLink :class="{selected: $route.path === '/contact'}" class='menu_items_item' to="/contact">contact</NuxtLink>
-          </div>
+          </menu>
         </div>
-      </v-layout>
+      </v-row>
       <v-container class='maincontainer' fluid>
         <v-row align="center" class='maincontainer_wrapper'>
           <nuxt />
@@ -76,7 +76,7 @@ export default {
   right: 0
   position: absolute
   border-left: 1px solid $menu-color
-  min-width: 100px
+  min-width: 80px
   justify-content: center
 
   &_items
@@ -84,7 +84,7 @@ export default {
     flex-direction: column
     width: fit-content
     margin: 0 auto
-    margin-top: 25px
+    margin-top: 23px
     &_item
       min-width: 57px
       text-decoration: none
@@ -98,6 +98,11 @@ export default {
         font-style: italic
         text-decoration: none !important
         font-weight: bold
+  @media only screen and (max-width: 600px)
+    width: 10%
+    height: fit-content
+    border-bottom: 1px solid $menu-color
+    padding-bottom: 20px
 .maincontainer
   padding-left: 0
   margin-right: 0
@@ -107,5 +112,11 @@ export default {
   &_wrapper
     max-width: max(600px, 70%)
     margin: 0 auto
+
+  @media only screen and (max-width: 600px)
+    padding-right: 0px
+    padding-top: 25px
+
+
 
 </style>

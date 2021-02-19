@@ -1,7 +1,7 @@
 <template>
   <v-container class='exhibition'>
     <h1 class='exhibition_title'>{{ exhibition.title }}</h1>
-    <p class='exhibition_date'>{{ getFormattedDate(exhibition.date) }}</p>
+    <time class='exhibition_date'>{{ getFormattedDate(exhibition.date) }}</time>
     <nuxt-content class='exhibition_content' :document="exhibition" />
   </v-container>
 </template>
@@ -47,13 +47,14 @@ export default {
   &_title
     font-family: Ribosoma
     font-size: 25px
-    margin-bottom: 30px
+    margin-bottom: 25px
   &_date
     font-size: 14px
 </style>
 
 <style lang="sass">
 .exhibition_content
+  margin-top: 25px !important
   width: 80%
   margin: 0 auto
   img
@@ -61,6 +62,7 @@ export default {
     max-width: 100%
   p
     font-size: 14px
-
+  @media only screen and (max-width: 600px)
+    width: 100%
 
 </style>

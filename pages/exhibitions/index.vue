@@ -7,9 +7,9 @@
             <img :src='exhibition.thumbnail'/>
           </div>
           <div class='exhibitions_body_content'>
-            <div class='exhibitions_body_content_date'>{{ getFormattedDate(exhibition.date) }}</div>
-            <div class='exhibitions_body_content_title'>{{ exhibition.title }}</div>
-            <div class='exhibitions_body_content_description'>{{ exhibition.description }}</div>
+            <time class='exhibitions_body_content_date'>{{ getFormattedDate(exhibition.date) }}</time>
+            <h1 class='exhibitions_body_content_title'>{{ exhibition.title }}</h1>
+            <p class='exhibitions_body_content_description'>{{ exhibition.description }}</p>
           </div>
         </div>
       </NuxtLink>
