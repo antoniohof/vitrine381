@@ -10,8 +10,24 @@
 import moment from 'moment'
 
 export default {
+  head () {
+    if (this.exhibition) {
+      return {
+        title: this.exhibition.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: this.exhibition.description
+          }
+        ]
+      }
+    }
+  },
   data () {
     return {
+      title: '',
+      description: ''
     }
   },
   computed: {
@@ -27,8 +43,8 @@ export default {
       error({ message: "exhibition not found" });
     }
     return {
-      exhibition,
-    };
+      exhibition
+    }
   },
   methods: {
     getFormattedDate (value) {
