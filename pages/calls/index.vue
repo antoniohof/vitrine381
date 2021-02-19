@@ -8,6 +8,16 @@ nada
 import moment from 'moment'
 
 export default {
+  head: {
+    title: 'Calls',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Calls about...'
+      }
+    ],
+  },
   data () {
     return {
     }

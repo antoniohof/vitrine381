@@ -21,6 +21,16 @@
 import moment from 'moment'
 
 export default {
+  head: {
+    title: 'Exhibitions',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Exhibitions about...'
+      }
+    ],
+  },
   data () {
     return {
     }

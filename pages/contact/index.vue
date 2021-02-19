@@ -9,6 +9,16 @@ nada
 import moment from 'moment'
 
 export default {
+  head: {
+    title: 'Contact',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Contact about...'
+      }
+    ],
+  },
   data () {
     return {
     }
