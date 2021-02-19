@@ -48,7 +48,7 @@ export default {
 
 <style lang="sass" scoped>
 .exhibitions
-  max-width: max(500px, 70%)
+  max-width: max(600px, 70%)
 *
   font-family: "PT Sans", sans-serif
   text-decoration: none !important
@@ -65,7 +65,7 @@ export default {
     @media only screen and (max-width: 600px)
       width: 100%
   &_content
-    padding-top: 5%
+    margin-top: 5%
     display: flex
     flex-direction: column
     width: 45%

@@ -79,9 +79,9 @@ export default {
     flex-direction: column
     width: fit-content
     margin: 0 auto
-    margin-top: 20px
+    margin-top: 25px
     &_item
-      min-width: 55px
+      min-width: 57px
       text-decoration: none
       color: $menu-color
       cursor: pointer

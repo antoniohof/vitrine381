@@ -3,12 +3,11 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    // titleTemplate: '%s - Vitrine 381',
     title: 'Vitrine 381',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Ausstellung' }
     ],
     link: [
       {
@@ -80,5 +79,8 @@ export default {
   },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+  sitemap: {
+    hostname: 'https://vitrine381.space'
   }
 }
