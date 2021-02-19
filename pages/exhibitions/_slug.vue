@@ -1,11 +1,14 @@
 <template>
   <div class='exhibition'>
-    <h1>{{ exhibition.title }}</h1>
-    <nuxt-content :document="exhibition" />
+    <h1 class='exhibition_title'>{{ exhibition.title }}</h1>
+    <p class='exhibition_date'>{{ getFormattedDate(exhibition.date) }}</p>
+    <nuxt-content class='exhibition_content' :document="exhibition" />
   </div>
 </template>
 
 <script>
+import moment from 'moment'
+
 export default {
   data () {
     return {
@@ -28,13 +31,26 @@ export default {
     };
   },
   methods: {
-
+    getFormattedDate (value) {
+      return moment(String(value)).format('DD.MM.YY')
+    }
   }
 }
 </script>
 
 <style lang="sass" scoped>
+*
+  color: $font-color
+
 .exhibition
   width: 100%
+  &_title
+    font-family: Ribosoma
+    font-size: 25px
+    margin-bottom: 30px
+  &_date
+    font-size: 15px
+  &_content
+
 
 </style>

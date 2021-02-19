@@ -1,6 +1,6 @@
 <template>
   <v-container class='exhibitions'>
-    <div v-for="exhibition of exhibitions" :key="exhibition.slug">
+    <div v-for="exhibition of sortedExhibitions" :key="exhibition.slug">
       <NuxtLink :to="{ name: 'exhibitions-slug', params: { slug: exhibition.slug } }">
         <div class='exhibitions_body'>
           <div v-if="exhibition.thumbnail" class='exhibitions_body_thumbnail'>
@@ -26,6 +26,12 @@ export default {
     }
   },
   computed: {
+    sortedExhibitions () {
+      this.exhibitions.sort( ( a, b) => {
+          return new Date(b.date) - new Date(a.date);
+      });
+      return this.exhibitions;
+    }
   },
   components: {
   },
@@ -46,7 +52,6 @@ export default {
 
 <style lang="sass" scoped>
 *
-  font-family: "PT Sans", sans-serif
   text-decoration: none !important
   color: $font-color
 .exhibitions_body
