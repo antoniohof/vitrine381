@@ -81,6 +81,7 @@ export default {
     margin: 0 auto
     margin-top: 20px
     &_item
+      min-width: 55px
       text-decoration: none
       color: $menu-color
       cursor: pointer
@@ -93,6 +94,7 @@ export default {
         text-decoration: none !important
         font-weight: bold
 .maincontainer
+  padding-left: 0
   width: 100%
   margin-right: 0
   margin-left: 0

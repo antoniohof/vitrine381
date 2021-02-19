@@ -41,7 +41,8 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxt/content',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/sitemap'
   ],
   styleResources: {
     sass: ['~/assets/globals.sass']
