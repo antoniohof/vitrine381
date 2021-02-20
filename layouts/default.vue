@@ -88,7 +88,9 @@ export default {
   border-left: 1px solid $menu-color
   min-width: 80px
   justify-content: center
-
+  background-image: url("/img/texture-menu.png")
+  background-size: contain
+  background-color: black
   &_items
     display: flex
     flex-direction: column
@@ -98,7 +100,7 @@ export default {
     &_item
       min-width: 57px
       text-decoration: none
-      color: $menu-color
+      color: white
       cursor: pointer
       font-size: 12px
       font-family: 'PT Sans', sans-serif
