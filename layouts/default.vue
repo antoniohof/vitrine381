@@ -50,15 +50,15 @@ export default {
 
 <style lang="sass" scoped>
 .foreground
-  position: absolute
+  position: fixed
   z-index: 1000
-  opacity: 0.1
+  opacity: 0.10
   color: red
   pointer-events: none
   background-image: url('/img/trasparent-texture.png')
   width: 100vw
   background-repeat: repeat
-  height: 100%
+  height: 100vh
 .body
   min-width: 50vw
   margin-left: 5%
