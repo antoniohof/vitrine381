@@ -21,6 +21,8 @@
         </v-row>
       </v-container>
     </v-main>
+    <div class='foreground'>
+    </div>
   </v-app>
 </template>
 
@@ -47,6 +49,16 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.foreground
+  position: absolute
+  z-index: 1000
+  opacity: 0.1
+  color: red
+  pointer-events: none
+  background-image: url('/img/trasparent-texture.png')
+  width: 100vw
+  background-repeat: repeat
+  height: 100%
 .body
   min-width: 50vw
   margin-left: 5%
