@@ -101,7 +101,7 @@ export default {
   min-width: 80px
   justify-content: center
   background-image: url("/img/texture-menu.png")
-  background-size: contain
+  background-size: auto 600px
   background-color: black
   &_items
     display: flex
