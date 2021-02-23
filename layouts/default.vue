@@ -108,13 +108,13 @@ export default {
     flex-direction: column
     width: fit-content
     margin: 0 auto
-    margin-top: 23px
+    margin-top: 25px
     &_item
       min-width: 57px
       text-decoration: none
       color: $font-color
       cursor: pointer
-      font-size: 12px
+      font-size: 14px
       font-family: 'PT Sans', sans-serif
       &:hover
         text-decoration: underline
@@ -122,8 +122,12 @@ export default {
         font-style: italic
         text-decoration: none !important
         font-weight: bold
+      @media only screen and (max-width: 600px)
+        font-size: 16px
+    @media only screen and (max-width: 600px)
+      margin-top: 16px
   @media only screen and (max-width: 600px)
-    width: 10%
+    width: 40%
     height: fit-content
     // border-bottom: 1px solid $menu-color
     border-left: none

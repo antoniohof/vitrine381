@@ -68,6 +68,9 @@ h1
   margin-top: 50px
   margin-bottom: 50px
 
+  @media only screen and (max-width: 600px)
+    background-position-y: -73px
+
 p
   color: $font-color
   font-size: 14px
