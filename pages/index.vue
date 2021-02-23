@@ -47,4 +47,9 @@ export default {
 h1
   font-family: Ribosoma
   color: $font-color
+  font-size: 28px
+
+p
+  margin-top: 20px
+  font-size: 14px
 </style>

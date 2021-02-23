@@ -3,8 +3,9 @@
     <v-row>
       <v-col>
         <h1>
-          Stet clita kasd gubergren
+        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
         </h1>
+        <div class='space_image'/>
         <p>
         Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
         </p>
@@ -54,5 +55,20 @@ export default {
 h1
   font-family: Ribosoma
   color: $font-color
+  font-size: 16px
+.space_image
+  width: 100%
+  height: 300px
+  background-image: url('/img/IMG_2371_jpg.jpg')
+  background-size: cover
+  background-position-y: -131px
+  width: 80%
+  margin: 0 auto
+  height: 250px
+  margin-top: 50px
+  margin-bottom: 50px
 
+p
+  color: $font-color
+  font-size: 14px
 </style>
