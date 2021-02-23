@@ -125,7 +125,8 @@ export default {
   @media only screen and (max-width: 600px)
     width: 10%
     height: fit-content
-    border-bottom: 1px solid $menu-color
+    // border-bottom: 1px solid $menu-color
+    border-left: none
     padding-bottom: 20px
 .maincontainer
   padding-left: 0
