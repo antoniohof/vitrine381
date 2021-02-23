@@ -27,7 +27,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Exhibitions about...'
+        content: 'Exhibitions'
       }
     ],
   },

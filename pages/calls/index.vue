@@ -22,7 +22,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Calls about...'
+        content: 'Calls'
       }
     ],
   },
