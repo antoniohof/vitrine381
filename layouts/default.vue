@@ -55,7 +55,7 @@ export default {
   opacity: 0.10
   color: red
   pointer-events: none
-  background-image: url('/img/trasparent-texture.png')
+  // background-image: url('/img/trasparent-texture.png')
   width: 100vw
   background-repeat: repeat
   height: 100vh
@@ -100,9 +100,9 @@ export default {
   border-left: 1px solid $menu-color
   min-width: 80px
   justify-content: center
-  background-image: url("/img/texture-menu.png")
-  background-size: auto 600px
-  background-color: black
+  // background-image: url("/img/texture-menu.png")
+  // background-size: auto 600px
+  // background-color: black
   &_items
     display: flex
     flex-direction: column
@@ -112,7 +112,7 @@ export default {
     &_item
       min-width: 57px
       text-decoration: none
-      color: white
+      color: $font-color
       cursor: pointer
       font-size: 12px
       font-family: 'PT Sans', sans-serif
