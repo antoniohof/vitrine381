@@ -38,8 +38,8 @@
 
         <v-img
         lazy-src="/img/footer.png"
-        max-height="50"
-        max-width="100"
+        max-height="70"
+        max-width="120"
         src="/img/footer.png"
       ></v-img>
     </v-footer>
