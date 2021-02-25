@@ -9,6 +9,12 @@
         <p>
        <!-- Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.-->
         </p>
+      <v-img
+        class='space_image_2'
+        lazy-src="/img/IMG_9321.JPG"
+        max-width="80%"
+        src="/img/IMG_9321.JPG"
+      ></v-img>
       </v-col>
     </v-row>
   </v-container>
@@ -70,6 +76,11 @@ h1
 
   @media only screen and (max-width: 600px)
     background-position-y: -73px
+
+.space_image_2
+  margin: 0 auto
+
+
 
 p
   color: $font-color
