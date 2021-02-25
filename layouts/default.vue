@@ -21,8 +21,29 @@
         </v-row>
       </v-container>
     </v-main>
-    <div class='foreground'>
-    </div>
+    <v-footer
+      class='footer'
+      padless
+    >
+      <v-btn
+        @click="openInstagram"
+        class="mx-4"
+        dark
+        icon
+      >
+        <v-icon dark :color="getDefaultColor" size="14px">
+          {{ icon }}
+        </v-icon>
+      </v-btn>
+
+        <v-img
+        lazy-src="/img/footer.png"
+        max-height="50"
+        max-width="100"
+        src="/img/footer.png"
+      ></v-img>
+    </v-footer>
+
   </v-app>
 </template>
 
@@ -38,11 +59,21 @@ export default {
       }
     ],
   },
+  computed: {
+    getDefaultColor() {
+      return '#707070'
+    }
+  },
   mounted () {
-    console.log('mounted vitrine app')
   },
   data () {
     return {
+    icon: 'mdi-instagram'
+    }
+  },
+  methods: {
+    openInstagram() {
+      window.open("https://www.instagram.com/vitrine381/", "_blank");
     }
   }
 }
@@ -147,5 +178,8 @@ export default {
     padding-top: 25px
 
 
-
+.footer
+  border-top: 1px solid $menu-color
+  background-color: rgba(235,235,235)
+  color: rgba(235,235,235)
 </style>
