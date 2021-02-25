@@ -43,6 +43,7 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    '@nuxtjs/robots',
     '@nuxt/content',
     '@nuxtjs/style-resources',
     '@nuxtjs/sitemap'
