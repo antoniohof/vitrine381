@@ -1,6 +1,6 @@
 ---
-title: "**.init()**"
-date: 2021-02-25T09:38:03.439Z
+title: .init()
+date: 2021-02-22T09:38:03.439Z
 description: With this initial exhibition the Vitrine 381 invites everyone in
   Bremen to the window front of Gröpelinger Heerstraße 381, former PLUS
   supermarkt, now temporary studio and exhibition space. There a variety of
@@ -22,3 +22,7 @@ Joris Wegner\
 Manana Kobakhidze\
 Nathalie Gebert\
 Petrit Hoxha
+
+
+
+![](/img/img_9376.jpg)
