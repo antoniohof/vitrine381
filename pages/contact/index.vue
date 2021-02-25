@@ -10,7 +10,7 @@
        lstoever@hfk-bremen.de
         </p>
         <p>
-       Gröpelinger Heerstraße 381
+       Gröpelinger Heerstraße 381 Bremen
         </p>
       </v-col>
     </v-row>
