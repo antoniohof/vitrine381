@@ -10,10 +10,9 @@
        <!-- Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.-->
         </p>
       <v-img
-        class='space_image_2'
-        lazy-src="/img/IMG_9321.JPG"
+        class='space_image_2 lazyload'
+        lazy-src="assets/images/IMG_9321.JPG"
         max-width="80%"
-        src="/img/IMG_9321.JPG"
       ></v-img>
       </v-col>
     </v-row>
