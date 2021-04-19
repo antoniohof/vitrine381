@@ -13,6 +13,16 @@
             <NuxtLink :class="{selected: $route.path === '/exhibitions'}" class='menu_items_item' to="/exhibitions">exhibitions</NuxtLink>
             <NuxtLink :class="{selected: $route.path === '/contact'}" class='menu_items_item' to="/contact">contact</NuxtLink>
           </menu>
+                        <v-btn
+                @click="openInstagram"
+                dark
+                class='instagram'
+                icon
+              >
+                <v-icon dark :color="getDefaultColor" size="14px">
+                  {{ icon }}
+                </v-icon>
+              </v-btn>
         </div>
       </v-row>
       <v-container class='maincontainer' fluid>
@@ -25,23 +35,21 @@
       class='footer'
       padless
     >
-      <v-btn
-        @click="openInstagram"
-        class="mx-4"
-        dark
-        icon
-      >
-        <v-icon dark :color="getDefaultColor" size="14px">
-          {{ icon }}
-        </v-icon>
-      </v-btn>
-
-        <v-img
-        lazy-src="/img/footer.png"
-        max-height="70"
-        max-width="120"
+        <img
         src="/img/footer.png"
-      ></v-img>
+        class='footer_logo'
+      />
+
+        <img
+        src="/img/sparkasse_logo.png"
+        class='footer_logo'
+      />
+
+
+        <img
+        src="/img/zzz_logo.png"
+        class='footer_logo'
+      />
     </v-footer>
 
   </v-app>
@@ -177,9 +185,29 @@ export default {
     padding-right: 0px
     padding-top: 25px
 
+.instagram
+  position: absolute
+  bottom: 10px
+  left: calc(50% - 18px)
 
 .footer
+  display: flex
+  flex-direction: row
+  height: fit-content
+  max-height: 200px
+  margin-left: 5%
+  margin-right: 5%
   border-top: 1px solid $menu-color
   background-color: rgba(235,235,235)
   color: rgba(235,235,235)
+  overflow: hidden
+  justify-content: space-around
+  &_logo
+    width: 30%
+    max-width: 150px
+    min-width: 100px
+    padding-top: 3%
+    padding-left: 10px
+    padding-right: 10px
+    padding-bottom: 3%
 </style>
