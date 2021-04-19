@@ -190,7 +190,7 @@ export default {
   bottom: 10px
   left: calc(50% - 18px)
   @media only screen and (max-width: 600px)
-    left: 20px !important
+    margin-left: -29px
     margin-bottom: -25px
 
 .footer
