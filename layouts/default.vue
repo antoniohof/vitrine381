@@ -189,6 +189,9 @@ export default {
   position: absolute
   bottom: 10px
   left: calc(50% - 18px)
+  @media only screen and (max-width: 600px)
+    left: 20px !important
+    margin-bottom: -25px
 
 .footer
   display: flex
